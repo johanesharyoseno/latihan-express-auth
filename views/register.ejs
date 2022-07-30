@@ -1,8 +1,9 @@
 <html>
     <form method="post" action="/register">
+        <% if(typeof error!= 'undefined') {%> <p><%= error %></p><%}%>
         <label for="username">Username</label>
         <br>
-        <input type="text" name="username" placeholder="masukkan username anda"> </input>
+        <input required type="text" name="username" placeholder="masukkan username anda"> </input>
 
         <br>
 
